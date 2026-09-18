@@ -5,6 +5,7 @@ The **Human-Computer Interaction Research Group** at the **University of Oviedo*
 We research how people interact with technology, building tools and platforms to study user behavior and interaction design.
 
 🌐 Website: [hci.uniovi.es](https://www.hci.uniovi.es/)
+
 🦋 Bluesky: [@hciuniovi.bsky.social](https://bsky.app/profile/hciuniovi.bsky.social)
 
 ## Team
@@ -23,5 +24,3 @@ We research how people interact with technology, building tools and platforms to
 - Paula Díaz Álvarez — Software Engineer (Student)
 - Mujahid Mahmood — Software Engineer
 - Sheikh Haseeb — Data Scientist
-
-Ongoing projects are listed on our [website](https://www.hci.uniovi.es/).
