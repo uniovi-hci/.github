@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Referencias bibliográficas</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #555555;
+    --accent: #2f5fa8;
+    --border: #e0e0e0;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212;
+      --text: #e8e8e8;
+      --muted: #a3a3a3;
+      --accent: #7fa8e0;
+      --border: #2c2c2c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212;
+    --text: #e8e8e8;
+    --muted: #a3a3a3;
+    --accent: #7fa8e0;
+    --border: #2c2c2c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Georgia", "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  ol.references {
+    list-style: none;
+    counter-reset: ref;
+    padding: 0;
+    margin: 0;
+  }
+
+  ol.references li {
+    counter-increment: ref;
+    display: flex;
+    gap: 0.9rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  ol.references li:first-child {
+    padding-top: 0;
+  }
+
+  ol.references li::before {
+    content: "[" counter(ref) "]";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 600;
+    color: var(--accent);
+    flex-shrink: 0;
+    min-width: 2.4rem;
+  }
+
+  .ref-text {
+    font-size: 0.98rem;
+  }
+
+  .ref-text a {
+    color: var(--accent);
+    word-break: break-word;
+  }
+
+  footer {
+    margin-top: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Noche de los Investigadores 2026</h1>
+  <p><i>HCI-RG</i></p>
+  <p class="subtitle">Referencias científicas</p>
+  <ol class="references">
+    <li>
+      <span class="ref-text">
+        R. Fernández, "Cuánto consume una televisión LED, OLED y QLED," <em>PODO Blog</em>, 4-dic-2025. [En línea]. Disponible en:
+        <a href="https://www.mipodo.com/blog/cuanto-consume-una-television-led-oled-y-qled" target="_blank" rel="noopener">https://www.mipodo.com/blog/cuanto-consume-una-television-led-oled-y-qled</a>
+      </span>
+    </li>
+    <li>
+      <span class="ref-text">
+        P. Díaz-Álvarez, S. Vecino, M. González-Rodríguez, J. De Andrés y D. Fernández-Lanvin, "Influence of Mobile Interaction between Light and Dark Modes."
+      </span>
+    </li>
+    <li>
+      <span class="ref-text">
+        L. A. Pedersen, S. S. Einarsson, F. A. Rikheim y F. Sandnes, "User interfaces in dark mode during daytime – improved productivity or just cool-looking?," <em>Lecture Notes in Computer Science</em>, vol. 12188, pp. 178–187, 2020.
+      </span>
+    </li>
+    <li>
+      <span class="ref-text">
+        P. Dash y Y. C. Hu, "How much battery does dark mode save?: An accurate OLED display power profiler for modern smartphones," en <em>MobiSys 2021 - Proceedings of the 19th Annual International Conference on Mobile Systems, Applications, and Services</em>, jun. 2021, pp. 323–335.
+      </span>
+    </li>
+  </ol>
+
+  <footer>
+    <img style="width: 20vw;" src="https://www.uniovi.es/documents/39158/0d502717-6d37-235d-e69e-233f89318fac"/>
+    <p>Generado automáticamente &middot; página estática</p>
+  </footer>
+</main>
+</body>
+</html>
